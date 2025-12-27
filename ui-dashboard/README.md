@@ -1,27 +1,31 @@
-# UI Dashboard
+# Sales Analytics Dashboard
 
-A modern, responsive sales analytics dashboard built with React and Tailwind CSS.
+A modern, pixel-perfect sales analytics dashboard built with React, featuring interactive charts, real-time data visualization, and a clean, responsive UI.
 
 ![Dashboard Preview](Screenshot%202025-12-26%20181535.png)
 
-## Features
+## ✨ Features
 
-- 📊 **Revenue Analytics** - Track revenue with comparison to previous periods
-- 👥 **User Performance** - Monitor sales team performance with KPIs
-- 📈 **Interactive Charts** - Visualize data with bar charts and line graphs
+- 📊 **Revenue Analytics** - Track revenue with comparison to previous periods and growth indicators
+- 👥 **User Performance** - Monitor sales team performance with KPIs, badges, and achievements
+- 📈 **Interactive Charts** - Visualize data with bar charts, area charts, and line graphs using Recharts
 - 🎯 **Platform Insights** - Analyze deals by referrer platforms (Dribbble, Instagram, Behance, Google)
-- 🗂️ **Organized Navigation** - Collapsible sidebar with starred items, shared folders, and reports
-- 🎨 **Modern UI** - Clean design with smooth transitions and hover effects
+- 🗂️ **Organized Navigation** - Collapsible sidebar with tree structure, starred items, shared folders, and reports
+- 🎨 **Modern UI** - Clean design with smooth transitions, hover effects, and Tailwind CSS
+- 🔔 **Toast Notifications** - Real-time feedback for all user interactions
+- 🔍 **Global Search** - Fixed top search bar for quick insights access
+- 🎭 **Actionable Elements** - All buttons and icons are clickable with visual feedback
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
+- **React 18** - UI library with hooks
+- **Vite** - Lightning-fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
-- **Recharts** - Charting library
-- **Lucide React** - Icon library
+- **Recharts** - Composable charting library built on React components
+- **Lucide React** - Beautiful & consistent icon library
+- **DiceBear Avatars** - Avatar generation API
 
-## Getting Started
+## 📦 Getting Started
 
 ### Prerequisites
 
@@ -56,26 +60,32 @@ A modern, responsive sales analytics dashboard built with React and Tailwind CSS
 | `npm run build` | Build for production |
 | `npm run preview` | Preview production build |
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 ui-dashboard/
-├── index.html
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
-└── src/
-    ├── main.jsx          # Entry point
-    ├── index.css         # Global styles
-    ├── App.jsx           # Main app component
-    └── components/
-        ├── Sidebar.jsx           # Navigation sidebar
-        ├── Header.jsx            # Top header with search
-        ├── RevenueSection.jsx    # Revenue stats display
-        ├── ChartsSection.jsx     # Deals charts
-        ├── PlatformValueChart.jsx # Platform value bar chart
-        └── UserStats.jsx         # User table and stats
+├── src/
+│   ├── components/
+│   │   ├── ActionToast.jsx       # Toast notification system
+│   │   ├── ChartsSection.jsx     # Deals charts and referrer analytics
+│   │   ├── Header.jsx            # User tabs and action buttons
+│   │   ├── Pageheader.jsx        # Reusable page header component
+│   │   ├── PlatformValueChart.jsx # Platform revenue bar chart
+│   │   ├── RevenueSection.jsx    # Hero section with KPI cards
+│   │   ├── Sidebar.jsx           # Navigation sidebar with tree structure
+│   │   ├── TopBar.jsx            # Fixed top search bar
+│   │   └── UserStats.jsx         # User performance and sales dynamic
+│   ├── App.jsx                   # Main application with layout
+│   ├── index.css                 # Global styles and Tailwind imports
+│   └── main.jsx                  # React entry point
+├── public/                       # Static assets
+├── index.html                    # HTML template
+├── package.json                  # Dependencies and scripts
+├── tailwind.config.js            # Tailwind configuration
+├── postcss.config.js             # PostCSS configuration
+├── vite.config.js                # Vite configuration
+├── .gitignore                    # Git ignore rules
+└── README.md                     # Project documentation
 ```
 
 ## Components
